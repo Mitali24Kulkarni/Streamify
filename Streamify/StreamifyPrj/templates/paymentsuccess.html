@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="bg-primary_black min-h-screen py-20 md:py-32 flex-col flex items-center" >
+  <h1 class="text-center text-4xl font-semibold">Subscription Payment Successful</h1>
+
+  <p class="text-center mt-4 mb-8">Your subscription payment was successful! You can now start watching movies on Streamify.</p>
+
+  <div class="flex justify-center mt-4 mb-8">
+    <a href="{% url 'StreamifyApp:profile-list' %}" class="text-blue-600 font-medium">My Profile</a>
+  </div>
+</section>
+{% endblock %}
